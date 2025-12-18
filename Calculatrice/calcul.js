@@ -15,9 +15,10 @@ while(true){
     console.log("0 : Pour quitter le programme")
     console.log("-----------------------------------------");
     let operation = Number(p("Choisissez l'opération que vous voulez : "))
-    if(operation===0){break}
+    // if(operation===0){break}
     
     switch(true){
+        case operation===0 : console.log("Fin du programme");process.exit()
         case operation===1 : Addition(); break
         case operation===2 : Soustraction(); break
         case operation===3 : Multiplication(); break
